@@ -65,6 +65,7 @@
 
             .parent {
                 height: calc(100vh - 10rem);
+                height: 80vh;
                 width: 100vw;
                 display: flex;
                 flex-direction: column;
@@ -101,8 +102,9 @@
                     #ccc 35%,
                     #ffe0b2 45%
                 );
-                background-clip: text;
-                color: transparent;
+/*                 background-clip: text;
+ */               color: transparent;
+        -webkit-background-clip: text;
             }
             p {
                 color: white;
@@ -115,7 +117,7 @@
                     #ccc,
                     #ffe0b2 75%
                 );
-                background-clip: text;
+                -webkit-background-clip: text;
                 color: transparent;
             }
 
@@ -141,7 +143,7 @@
             }
             .globe {
                 position: absolute;
-                bottom: 0;
+                bottom: 5%;
                 right: 0;
                 animation: rotate 1s linear infinite alternate;
             }
